@@ -111,10 +111,10 @@ abstract contract ERC721 {
     }
 
     function safeTransferFrom(
-        address from,
-        address to,
-        uint256 id,
-        bytes memory data
+          address from
+        , address to
+        , uint256 id
+        , bytes memory data
     ) public virtual {
         transferFrom(from, to, id);
 
